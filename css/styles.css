@@ -1,0 +1,53 @@
+/*
+	Student Name: Sam L.
+	File Name: styles.css
+	Date: 9/18/2024
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, div, span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Header */
+header {
+	border-bottom: 2px solid black;
+	/*overflow: hidden;*/
+}
+
+header h1{
+	font-size: 2em;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+#icon {
+	display: inline-block;
+	max-width: 10%;
+	border-right: 2px solid black;
+}
+
+/* Nav */
+nav {
+	border-bottom: 1px solid rgba(0, 0, 0, .5)
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: .5em 1.5em;
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+}
+
+/* Responsive Images */
+img {
+	max-height: 100%;
+	max-width: 100%;
+	display: inline-block;
+}
