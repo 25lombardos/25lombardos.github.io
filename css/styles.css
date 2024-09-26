@@ -19,7 +19,6 @@ body {
 header {
 	border-bottom: 2px solid black;
 	background-color: #348C96;
-	/*overflow: hidden;*/
 }
 
 header h1{
@@ -30,6 +29,7 @@ header h1{
 	color: #fff;
 }
 
+/* Icon */
 #icon {
 	display: inline-block;
 	width: 150px;
@@ -66,15 +66,43 @@ nav li a {
 	color: #fff;
 }
 
+/* Main */
+main {
+	padding: 2em;
+	font-size: 1em;
+	font-family: Merriweather, serif;
+}
+
+#projects {
+	display: inline-block;
+	margin: 0;
+}
+
+#f {
+	list-style-type: disc;
+}
+
+#projects>li:nth-child(odd) {
+	background-color: rgb(240,240,240);
+}
+
+#projects>li:nth-child(even) {
+	background-color: rgb(230,230,230);
+}
+
+#projects li ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+/* Footer */
+footer {
+	font-family: Merriweather, serif;
+}
+
 /* Responsive Images */
 img {
 	max-height: 100%;
 	max-width: 100%;
 	display: block;
-}
-
-main {
-	padding: 2em;
-	font-size: 1em;
-	font-family: Merriweather, serif;
 }
