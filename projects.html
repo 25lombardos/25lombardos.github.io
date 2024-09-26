@@ -7,6 +7,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
 		<!--Dynamic-->
 		<title>Projects</title>
 	</head>
@@ -14,16 +15,17 @@
 	<body>
 		<!--Dynamic-->
 		<header>
-			<h1><img src="images/saml.png" alt="My Bitmoji" width="100" height="100">Projects</h1>
+			<div id="icon"><img src="images/saml.png" alt="My Bitmoji"></div>
+			<h1>Projects</h1>
 		</header>
 		<!--Static-->
 		<nav>
-			<hr>
-			<p><a href="index.html">Home</a> &nbsp; &#9632; &nbsp;
-			<a href="projects.html">Projects</a> &nbsp; &#9632; &nbsp;
-			<a href="about.html">About Me</a> &nbsp; &#9632; &nbsp;
-			<a href="contact.html">Contact</a></p>
-			<hr>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
 		</nav>
 		<!--Dynamic-->
 		<main>
@@ -31,42 +33,51 @@
 			<ul>
 				<li>To be added...</li>
 			</ul>
-			<hr>
 			<h2>Web Development Projects</h2>
 			<p><b>By Chapter:</b> <a href="#f">F</a> <a href="#1">1</a> <a href="#2">2</a> <a href="#3">3</a> <a href="#4">4</a></p>
 			<!--inline styling to be removed eventually-->
-			<ol style="display:inline-block; margin:0;" start="0">
+			<ol id="projects" start="0">
 				<!--
-					<a href="images/progress-screenshots/codehs|khanacademy/file.png">Name</a><br>
-					<a href="projects/datafiles/chapterXX/file">Name</a><br>
+					<li><a href="images/progress-screenshots/codehs|khanacademy/file.png">Name</a></li>
+					<li><a href="projects/datafiles/chapterXX/file">Name</a></li>
 				-->
-				<li id="f" style="background-color:rgb(240,240,240); list-style-type:disc;">
-					<a href="projects/datafiles/fitness/index.html">Fitness</a>
+				<li id="f">
+					<ul>
+						<li><a href="projects/datafiles/fitness/index.html">Fitness</a></li>
+					</ul>
 				</li>
-				<li id="1" style="background-color:rgb(230,230,230);">
-					<a href="images/progress-screenshots/codehs/web-design-1.png">CodeHS Web Design Unit 1</a><br>
-					<a href="projects/datafiles/chapter01/index.html">Extend</a><br>
-					<a href="projects/datafiles/chapter01/analyze/index.html">Analyze</a><br>
-					<a href="projects/datafiles/chapter01/your_turn1/personal_portfolio_plan.docx">Your Turn #1 Personal Portfolio</a>
+				<li id="1">
+					<ul>
+						<li><a href="images/progress-screenshots/codehs/web-design-1.png">CodeHS Web Design Unit 1</a></li>
+						<li><a href="projects/datafiles/chapter01/index.html">Extend</a></li>
+						<li><a href="projects/datafiles/chapter01/analyze/index.html">Analyze</a></li>
+						<li><a href="projects/datafiles/chapter01/your_turn1/personal_portfolio_plan.docx">Your Turn #1 Personal Portfolio</a></li>
+					</ul>
 				</li>
-				<li id="2" style="background-color:rgb(240,240,240);">
-					<a href="images/progress-screenshots/codehs/web-design-2.png">CodeHS Web Design Unit 2</a><br>
-					<a href="projects/datafiles/chapter02/template.html">Apply</a><br>
+				<li id="2">
+					<ul>
+						<li><a href="images/progress-screenshots/codehs/web-design-2.png">CodeHS Web Design Unit 2</a></li>
+						<li><a href="projects/datafiles/chapter02/template.html">Apply</a></li>
+					</ul>
 				</li>
-				<li id="3" style="background-color:rgb(230,230,230);">
-					<a href="projects/datafiles/chapter03/apply/index.html">Apply</a><br>
-					<a href="projects/datafiles/chapter03/extend/extend03.html">Extend</a><br>
-					Your Turn #1 new pages: <a href="about.html">About Me</a> and <a href="contact.html">Contact</a><br>
+				<li id="3">
+					<ul>
+						<li><a href="projects/datafiles/chapter03/apply/index.html">Apply</a></li>
+						<li><a href="projects/datafiles/chapter03/extend/extend03.html">Extend</a></li>
+						<li>Your Turn #1 new pages: <a href="about.html">About Me</a> and <a href="contact.html">Contact</a></li>
+					</ul>
 				</li>
-				<li id="4" style="background-color:rgb(240,240,240);">
-					<a href="projects/datafiles/chapter04/apply/index.html">Apply</a><br>
-					<a href="projects/datafiles/chapter04/extend/extend04.html">Extend</a><br>
+				<li id="4">
+					<ul>
+						<li><a href="images/progress-screenshots/codehs/web-design-3.png">CodeHS Web Design Unit 3</a></li>
+						<li><a href="projects/datafiles/chapter04/apply/index.html">Apply</a></li>
+						<li><a href="projects/datafiles/chapter04/extend/extend04.html">Extend</a></li>
+					</ul>
 				</li>
 			</ol>
 		</main>
 		<!--Static-->
 		<footer>
-			<hr>
 			<p><a href="mailto:samuel.lombardo@stu.cvccworks.edu">samuel.lombardo@stu.cvccworks.edu</a></p>
 			<p>&copy; Copyright 2024. All Rights Reserved.</p>
 		</footer>
