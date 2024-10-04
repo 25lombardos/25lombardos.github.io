@@ -7,7 +7,11 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 		<!--Dynamic-->
 		<title>Projects</title>
 	</head>
@@ -29,57 +33,63 @@
 		</nav>
 		<!--Dynamic-->
 		<main>
-			<h2>Personal Projects</h2>
-			<ul>
-				<li>To be added...</li>
-			</ul>
-			<h2>Web Development Projects</h2>
-			<p><b>By Chapter:</b> <a href="#f">F</a> <a href="#1">1</a> <a href="#2">2</a> <a href="#3">3</a> <a href="#4">4</a></p>
-			<!--inline styling to be removed eventually-->
-			<ol id="projects" start="0">
-				<!--
-					<li><a href="images/progress-screenshots/codehs|khanacademy/file.png">Name</a></li>
-					<li><a href="projects/datafiles/chapterXX/file">Name</a></li>
-				-->
-				<li id="f">
-					<ul>
-						<li><a href="projects/datafiles/fitness/index.html">Fitness</a></li>
-					</ul>
-				</li>
-				<li id="1">
-					<ul>
-						<li><a href="images/progress-screenshots/codehs/web-design-1.png">CodeHS Web Design Unit 1</a></li>
-						<li><a href="projects/datafiles/chapter01/index.html">Extend</a></li>
-						<li><a href="projects/datafiles/chapter01/analyze/index.html">Analyze</a></li>
-						<li><a href="projects/datafiles/chapter01/your_turn1/personal_portfolio_plan.docx">Your Turn #1 Personal Portfolio</a></li>
-					</ul>
-				</li>
-				<li id="2">
-					<ul>
-						<li><a href="images/progress-screenshots/codehs/web-design-2.png">CodeHS Web Design Unit 2</a></li>
-						<li><a href="projects/datafiles/chapter02/template.html">Apply</a></li>
-					</ul>
-				</li>
-				<li id="3">
-					<ul>
-						<li><a href="projects/datafiles/chapter03/apply/index.html">Apply</a></li>
-						<li><a href="projects/datafiles/chapter03/extend/extend03.html">Extend</a></li>
-						<li>Your Turn #1 new pages: <a href="about.html">About Me</a> and <a href="contact.html">Contact</a></li>
-					</ul>
-				</li>
-				<li id="4">
-					<ul>
-						<li><a href="images/progress-screenshots/codehs/web-design-3.png">CodeHS Web Design Unit 3</a></li>
-						<li><a href="projects/datafiles/chapter04/apply/index.html">Apply</a></li>
-						<li><a href="projects/datafiles/chapter04/extend/extend04.html">Extend</a></li>
-					</ul>
-				</li>
-				<li id="5">
-					<ul>
-						<li><a href="projects/datafiles/chapter05/apply/index.html">Apply</a></li>
-					</ul>
-				</li>
-			</ol>
+			<div id="personal" class="projects tablet-desktop">
+				<h2>Personal Projects</h2>
+				<ul>
+					<li>To be added...</li>
+				</ul>
+			</div>
+			
+			<div id="web-development" class="projects">
+				<h2>Web Development Projects</h2>
+				<p class="bookmarks"><b>By Chapter:</b> <a href="#f">F</a> <a href="#1">1</a> <a href="#2">2</a> <a href="#3">3</a> <a href="#4">4</a></p>
+				<ol start="0">
+					<!--
+						<li><a href="images/progress-screenshots/codehs|khanacademy/file.png">Name</a></li>
+						<li><a href="projects/datafiles/chapterXX/file">Name</a></li>
+					-->
+					<li id="f">
+						<ul>
+							<li><a href="projects/datafiles/fitness/index.html">Fitness</a></li>
+						</ul>
+					</li>
+					<li id="1">
+						<ul>
+							<li><a href="images/progress-screenshots/codehs/web-design-1.png">CodeHS Web Design Unit 1</a></li>
+							<li><a href="projects/datafiles/chapter01/index.html">Extend</a></li>
+							<li><a href="projects/datafiles/chapter01/analyze/index.html">Analyze</a></li>
+							<li><a href="projects/datafiles/chapter01/your_turn1/personal_portfolio_plan.docx">Your Turn #1 Personal Portfolio</a></li>
+						</ul>
+					</li>
+					<li id="2">
+						<ul>
+							<li><a href="images/progress-screenshots/codehs/web-design-2.png">CodeHS Web Design Unit 2</a></li>
+							<li><a href="projects/datafiles/chapter02/template.html">Apply</a></li>
+						</ul>
+					</li>
+					<li id="3">
+						<ul>
+							<li><a href="projects/datafiles/chapter03/apply/index.html">Apply</a></li>
+							<li><a href="projects/datafiles/chapter03/extend/extend03.html">Extend</a></li>
+							<li>Your Turn #1 new pages: <a href="about.html">About Me</a> and <a href="contact.html">Contact</a></li>
+						</ul>
+					</li>
+					<li id="4">
+						<ul>
+							<li><a href="images/progress-screenshots/codehs/web-design-3.png">CodeHS Web Design Unit 3</a></li>
+							<li><a href="projects/datafiles/chapter04/apply/index.html">Apply</a></li>
+							<li><a href="projects/datafiles/chapter04/extend/extend04.html">Extend</a></li>
+						</ul>
+					</li>
+					<li id="5">
+						<ul>
+							<li><a href="projects/datafiles/chapter05/apply/index.html">Apply</a></li>
+							<li><a href="projects/datafiles/chapter05/extend/index.html">Extend</a></li>
+							<li><a href="images/progress-screenshots/khanacademy/financial-literacy-test.png">Khan Academy Financial Literacy</a></li>
+						</ul>
+					</li>
+				</ol>
+			</div>
 		</main>
 		<!--Static-->
 		<footer>
