@@ -1,0 +1,65 @@
+/*
+Author: Sam L.
+Date: 10/18/2024
+File Name: apply08.css
+*/
+
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #f4f9e1;
+}
+
+/* Style rule for the container */
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Style rules for the table */
+/* centers the table within the container, sets the width, and defines a border. */
+table {
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid #71881b;
+}
+
+/* sets the borders to collapse and defines the padding */
+table, tr, th, td {
+	border-collapse: collapse;
+	padding: 2%;
+}
+
+/* defines the font size, padding, and adds a top margin */
+caption {
+	font-size: 2em;
+	padding: 2%;
+	margin-top: 2%;
+}
+
+/* gives a border to the table cells */
+th, td {
+	border: 1px solid #7188bb;
+}
+
+/* centers the text within data cells */
+td {
+	text-align: center;
+}
+
+/* gives every other table row a background color */
+tr:nth-child(odd) {
+	background-color: #d3e788;
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}

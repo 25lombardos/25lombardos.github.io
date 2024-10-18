@@ -1,0 +1,72 @@
+/*
+Sam L.
+10/18/2024
+*/
+
+body {
+	font-family: sans-serif;
+	background-color: #ffe5dc;
+}
+
+/* Style rules for table */
+table {
+	border: 5px solid #fd4d0c;
+	border-collapse: collapse;
+	width: 80%;
+	margin: 0 auto;
+}
+
+thead {
+	color: #fff;
+	border: 1px solid #fff;
+	background-color: #792101;
+	text-align: center;
+}
+
+th {
+	border: 1px solid #fff;
+}
+
+tbody tr {
+	background-color: #fe9772;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #fff;
+}
+
+td {
+	border: 1px solid #a22c02;
+}
+
+tr, th, td {
+	padding: 1%;
+}
+
+/* display colors */
+#a, #b, #c, #d, #e {
+	height: 50px;
+	width: 50px;
+	border: 2px solid #000;
+	margin: 10px;
+}
+
+#a {
+	background-color: #ffe5dc;
+}
+
+#b {
+	background-color: #fd4d0c;
+}
+
+#c {
+	background-color: #792101;
+}
+
+#d {
+	background-color: #a22c02;
+}
+
+#e {
+	background-color: #fe9772;
+}
