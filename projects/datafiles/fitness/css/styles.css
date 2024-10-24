@@ -39,40 +39,30 @@ header img {
 	margin: 0 auto;
 }
 
-/* Style rules for the navigation area */
-nav {
-	padding: 1%;
-	margin-bottom: 1%;
-}
-
-nav ul {
-	list-style-type: none;
-	text-align: center;
-}
-
-nav li {
-	font-size: 1.5em;
-	font-family: "Francois One", sans-serif;
-	border-top: 1px solid #fff;
-}
-
-nav li:first-child {
-	border-top: none;
-}
-
-nav a {
-	display: block;
+/* Style rules for hamburger menu */
+.mobile-nav a {
 	color: #fff;
-	padding: .5em 1em;
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size: 2em;
 	text-decoration: none;
+	padding: 3%;
+	display: block;
 }
 
-/* Show mobile class, hide tablet-desktop class */
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links id */
 .mobile {
 	display: block;
 }
 
-.tablet-desktop {
+.tablet-desktop, #menu-links {
 	display: none;
 }
 
@@ -80,7 +70,7 @@ nav a {
 main {
 	background-color: #fff;
 	padding: 2%;
-	font-size: 1.25em;
+	font-size: 1.15em;
 	font-family: "Roboto Slab", serif;
 }
 
@@ -124,7 +114,7 @@ article:nth-of-type(2) {
 .tel-link a {
 	color: #fff;
 	text-decoration: none;
-	font-size: 1.15em;
+	font-size: 1.5em;
 	display: block;
 }
 
@@ -237,7 +227,7 @@ footer a {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 630px), print {
-	.mobile {
+	.mobile, .mobile-nav {
 		display: none;
 	}
 
@@ -249,8 +239,19 @@ footer a {
 		padding-bottom: 2%;
 	}
 
+	nav {
+		padding: 1%;
+		margin-bottom: 1%;
+	}
+	
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+	}
+	
 	nav li {
-		border-top: none;
+		font-size: 1.5em;
+		font-family: 'Francois One', sans-serif;
 		display: inline-block;
 		border-right: 1px solid #fff;
 	}
@@ -261,6 +262,9 @@ footer a {
 
 	nav li a {
 		padding: .1em .75em;
+		display: block;
+		color: #fff;
+		text-decoration: none;
 	}
 
 	main ul {
@@ -307,6 +311,15 @@ footer a {
 	#exercises dd {
 		padding: .5% 1% 2% 0;
 	}
+	
+	.viewex {
+		font-weight: bold;
+		cursor: pointer;
+	}
+	
+	#example {
+		display: none;
+	}
 
 	.tel-num {
 		font-size: 1.25em;
@@ -351,6 +364,28 @@ footer a {
 		width: 70%;
 		margin: 0 auto;
 	}
+	
+	/* Tablet Viewport: Animation */
+	@-webkit-keyframes text-animation {
+		0% {font-size: 1em;}
+		50% {font-size: 2em;}
+		100% {font-size: 1.35em;}
+	}
+	
+	@keyframes text-animation {
+		0% {font-size: 1em;}
+		50% {font-size: 2em;}
+		100% {font-size: 1.35em;}
+	}
+	
+	figcaption {
+		-webkit-animation-name: text-animation;
+		animation-name: text-animation;
+		-webkit-animation-delay: 3s;
+		animation-delay: 3s;
+		-webkit-animation-duration: 5s;
+		animation-duration: 5s;
+	}
 
 } /*end of tablet styles*/
 
@@ -383,6 +418,7 @@ footer a {
 	nav li a:hover {
 		color: #000;
 		background-color: #fff;
+		transform: scale(1.3);
 	}
 
 	main {
@@ -409,6 +445,7 @@ footer a {
 	.frame:hover {
 		opacity: 1;
 		box-shadow: 0px 0px 10px #000;
+		transform: translateY(10px);
 	}
 
 	#weights, #cardio, #training {
@@ -419,6 +456,11 @@ footer a {
 
 	#exercises {
 		clear: left;
+	}
+	
+	.offer:hover {
+		transform: scale(1.25);
+		cursor: pointer;
 	}
 
 	/* Desktop Viewport: Style rules for form elements */
